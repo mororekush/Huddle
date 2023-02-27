@@ -230,7 +230,7 @@ main{
 
     main{
        padding: 0px;
-       font-size: 14px;
+       font-size: 12px;
        letter-spacing: 0.5px;
        text-align: center;
     }
@@ -252,6 +252,14 @@ main{
         justify-content: start;
         align-items: flex-start;
         padding: 10px 30px;
+        font-size: 13px;
     }
 
+        .ft-1>img {
+            max-width: 100px;
+            margin: 20px 10px;}
+
+     .footr-tab>h2{
+        font-size: 20px;
+     }
 }
