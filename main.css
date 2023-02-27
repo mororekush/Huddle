@@ -12,9 +12,8 @@ header{
     background-color: hsl(193, 100%, 96%);
 }
 
-
-logo img{
-    width: 170vw;
+.logo > img{
+    width: 20vw;
 }
 
 nav{
@@ -30,7 +29,7 @@ nav{
 .nav-btn {
     background-color: white;
     color: rgb(119, 119, 119);
-    padding: 10px;
+    padding: 10px 5px;
     border-radius: 20px;
     border-style: none;
     margin: 10px 50px 0px 0px;
@@ -38,12 +37,11 @@ nav{
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: -1px 3px 20px 2px rgba(106, 106, 106, 0.344);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .hero-section{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 70px 100px;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +54,11 @@ nav{
 .left-col h1 {
     margin: 0px 0px 10px 0px;
 } 
+
+.left-col{
+    letter-spacing: 0.5px;
+    text-align: left;
+}
 
 p{
     margin: 0px 0px 20px 0px;
@@ -138,11 +141,11 @@ main{
 .footr-tab{
     border-radius: 10px;
     box-shadow: -1px 3px 20px 2px rgba(106, 106, 106, 0.344);
+    background-color: #fff;
     width: 50%;
     height: 20vh;
     margin: auto;
     text-align: center;
-    z-index: 1;
 }
 
 .footr-btn{
@@ -161,8 +164,9 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(15, 37, 41);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 15px;
     color: white;
     padding: 100px 0px;
@@ -171,6 +175,11 @@ main{
 .ft-1{
     display: flex;
     flex-direction: column;
+}
+
+.ft-1 > img{
+    max-width: 200px;
+    margin: 20px 10px;
 }
 
 .ft-2{
@@ -191,5 +200,58 @@ main{
 }
 
 @media screen and (max-width: 400px) {
-    
+    .nav-btn{
+        width: 70px;
+        font-size: 8px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px 2px rgba(73, 73, 73, 0.2);
+    }
+   
+    .left-col{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+        .hero-section{
+            margin: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+    .right-col img {
+        width: 70vw;
+        }
+        .right-col{
+            align-items: center;
+            justify-content: center;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+    main{
+       padding: 0px;
+       font-size: 14px;
+       letter-spacing: 0.5px;
+       text-align: center;
+    }
+
+    .card-one{
+        margin: 0px 40px;
+    }
+
+        .card-two {
+            margin: 15px 40px;
+        }
+
+                .card-three {
+                    margin: 10px 40px;
+                }
+
+    .footer-txt{
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 10px 30px;
+    }
+
 }
